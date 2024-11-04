@@ -1,25 +1,19 @@
 {
-    "name": "vormkracht10/dutch-laravel-foundation",
+    "name": "vormkracht10/dutchlaravelfoundation",
     "type": "project",
     "require": {
-        "php": "^8.0",
+        "php": "^8.3",
         "anakadote/statamic-recaptcha": "^1.0",
-        "fruitcake/laravel-cors": "^2.0",
-        "guzzlehttp/guzzle": "^7.0.1",
-        "laravel/framework": "^8.82",
-        "laravel/tinker": "^2.5",
-        "octoper/statamic-html-minify": "^0.0.5",
+        "guzzlehttp/guzzle": "^7.8.1",
+        "laravel/framework": "^11.0",
+        "laravel/tinker": "^2.9",
         "pecotamic/sitemap": "^1.4",
-        "rocketeers-app/rocketeers-laravel": "^1.0",
-        "statamic/cms": "3.3.27",
-        "webographen/statamic-dynamic-token": "^1.0"
+        "rocketeers-app/rocketeers-laravel": "^2.0",
+        "statamic/cms": "5.36.0"
     },
     "require-dev": {
-        "facade/ignition": "^2.17.6",
-        "fakerphp/faker": "^1.20.1",
-        "mockery/mockery": "^1.5.0",
-        "nunomaduro/collision": "^5.10",
-        "phpunit/phpunit": "^9.5.10"
+        "nunomaduro/collision": "^8.0",
+        "phpunit/phpunit": "^10.0"
     },
     "config": {
         "optimize-autoloader": true,
