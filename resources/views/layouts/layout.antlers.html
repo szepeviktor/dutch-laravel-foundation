@@ -28,21 +28,21 @@
     <title>{{ if site_title }}{{ site_title }} - {{ /if }}{{ site_name }}</title>
     {{ meta_description_text = meta_description ? meta_description : seo:meta_description }}
     {{ if meta_description_text }}
-        <meta name="description" content="{{ meta_description_text }}"/>
+        <meta name="description" content="{{ meta_description_text }}">
     {{ /if }}
     {{ meta_keywords_text = meta_keywords ? meta_keywords : seo:meta_keywords }}
     {{ if meta_keywords_text }}
-        <meta name="keywords" content="{{ meta_keywords_text }}"/>
+        <meta name="keywords" content="{{ meta_keywords_text }}">
     {{ /if }}
-    <meta property="og:title" content="{{ if title_text }}{{ title_text }} - {{ /if }}{{ site:name }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ current_url }}" />
+    <meta property="og:title" content="{{ if title_text }}{{ title_text }} - {{ /if }}{{ site:name }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ current_url }}">
     {{ meta_description_text = meta_description ? meta_description : seo:meta_description }}
     {{ if meta_description_text }}
         <meta property="og:description" content="{{ meta_description_text }}">
     {{ /if }}
     {{ opengraph_image = opengraph:opengraph_image ?? "/og-image.png" }}
-    <meta property="og:image" content="{{ site:url }}{{ opengraph_image }}" />
+    <meta property="og:image" content="{{ site:url }}{{ opengraph_image }}">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://use.typekit.net/oap5ojy.css">
