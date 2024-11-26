@@ -3,12 +3,10 @@
     "type": "project",
     "require": {
         "php": "^8.3",
-        "anakadote/statamic-recaptcha": "^1.0",
-        "guzzlehttp/guzzle": "^7.8.1",
         "laravel/framework": "^11.0",
-        "laravel/tinker": "^2.9",
+        "laravel/tinker": "^2.10",
         "pecotamic/sitemap": "^1.4",
-        "rocketeers-app/rocketeers-laravel": "^2.0",
+        "rocketeers-app/rocketeers-laravel": "^2.1",
         "statamic/cms": "5.36.0"
     },
     "require-dev": {
@@ -21,6 +19,7 @@
         "sort-packages": true,
         "allow-plugins": {
             "composer/package-versions-deprecated": true,
+            "php-http/discovery": true,
             "pixelfear/composer-dist-plugin": true
         }
     },

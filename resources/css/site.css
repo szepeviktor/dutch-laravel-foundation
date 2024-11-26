@@ -200,10 +200,6 @@ button[data-checked="true"] {
     }
 }
 
-.grecaptcha-badge {
-    opacity: 0;
-}
-
 pre code,
 pre.hljs {
     @apply !bg-gray-50 block rounded-sm shadow-inner my-10 !p-5 overflow-x-auto text-gray-900
