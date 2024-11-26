@@ -5,8 +5,8 @@ title: '1A First Alternative'
 founding_partner: false
 type: Bedrijf
 employees: 1-10
-updated_by: 56dfbdc8-dfe6-463c-8129-227705aace57
-updated_at: 1713354778
+updated_by: 28c0a799-7234-4581-b869-6eda5a36a8e2
+updated_at: 1729885541
 description: |-
   1A First Alternative levert ICT-diensten aan het MKB in Nederland via een landelijk netwerk van gecertificeerde 1A-partners. Deze ICT-diensten zijn vooral gericht op bedrijven van 5-100 medewerkers.
 
@@ -19,6 +19,7 @@ website: www.1afa.com
 phone: '+31 (0)88 00 164 01'
 logo: 1a-first-alternative.png
 province: Zuid-Holland
-published: true
 recruitment_website: 1afa.com/werken-bij/
+video: 'https://youtu.be/ySxBX9O62b8?si=Oyr96jt_PITcBZw_'
+published: true
 ---

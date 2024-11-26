@@ -4,8 +4,8 @@ blueprint: members
 title: Endeavour
 number_of_employees: 1-10
 founding_partner: true
-updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1679673229
+updated_by: 50f8ca13-10c1-43f9-b0a5-20bab3cf4f86
+updated_at: 1729517503
 city: Haarlem
 member_type: bedrijf
 type: Bedrijf
@@ -21,5 +21,7 @@ description: |-
 email: matthijs@endeavour.nl
 website: endeavour.nl
 phone: '+31 (0)23 844 71 03'
+recruitment_website: endeavour.nl/career/
+video: 'https://player.vimeo.com/video/631966009'
 published: true
 ---
