@@ -10,7 +10,7 @@
     {{ if insight_count > 0 }}
         {{ collection:knowledge sort="date:desc" }}
             <div class="w-full lg:w-11/12">
-                {{ partial:blocks/image-left-large class="" :image="featured_image" :category="category" link="/kennis/{ slug }" }}
+                {{ partial:blocks/image-left-large class="" :image="featured_image" :category="category" link="/knowledge/{ slug }" }}
                     {{ introduction }}
                 {{ /partial:blocks/image-left-large }}
             {{ /collection:knowledge }}
