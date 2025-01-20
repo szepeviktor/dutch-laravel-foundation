@@ -29,6 +29,7 @@
     {{ site_title = meta_title ?? title }}
     {{ site_name = seo:meta_title ?? site:name }}
     <title>{{ if site_title }}{{ site_title }} - {{ /if }}{{ site_name }}</title>
+    <meta property="og:title" content="{{ if site_title }}{{ site_title }} - {{ /if }}{{ site_name }}">
     {{ meta_description_text = meta_description ? meta_description : seo:meta_description }}
     {{ if meta_description_text }}
     <meta name="description" content="{{ meta_description_text }}">
