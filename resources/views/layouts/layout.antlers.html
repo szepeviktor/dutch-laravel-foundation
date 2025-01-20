@@ -37,7 +37,6 @@
     {{ if meta_keywords_text }}
     <meta name="keywords" content="{{ meta_keywords_text }}">
     {{ /if }}
-    <meta property="og:title" content="{{ if title_text }}{{ title_text }} - {{ /if }}{{ site:name }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ current_url }}">
     {{ meta_description_text = meta_description ? meta_description : seo:meta_description }}
