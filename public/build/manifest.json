@@ -1,0 +1,16 @@
+{
+  "resources/css/tailwind.css": {
+    "file": "assets/tailwind-BMla0XXC.css",
+    "src": "resources/css/tailwind.css",
+    "isEntry": true
+  },
+  "resources/js/site.js": {
+    "file": "assets/site-5b_5iBPT.js",
+    "name": "site",
+    "src": "resources/js/site.js",
+    "isEntry": true,
+    "css": [
+      "assets/site-MCJqnjIm.css"
+    ]
+  }
+}
