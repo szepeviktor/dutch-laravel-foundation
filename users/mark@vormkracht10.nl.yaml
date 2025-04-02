@@ -25,6 +25,10 @@ preferences:
   assets:
     events:
       mode: grid
+    insights:
+      mode: grid
+    assets:
+      mode: grid
   forms:
     become_member:
       columns:

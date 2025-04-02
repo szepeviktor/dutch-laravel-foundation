@@ -1,5 +1,6 @@
 ---
 id: 35fe165c-65a4-476a-9197-0626a0d422dc
+published: false
 blueprint: members
 title: Clarity
 description: |-
@@ -19,5 +20,4 @@ website: www.wijzijnclarity.nl
 phone: '020 - 737 12 65'
 updated_by: 28c0a799-7234-4581-b869-6eda5a36a8e2
 updated_at: 1711111911
-published: true
 ---
