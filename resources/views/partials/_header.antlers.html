@@ -41,11 +41,7 @@ function menu() {
 <header class="fixed top-0 left-0 w-screen z-999 {{ banner ? 'xl:bg-primary-accent': 'xl:bg-white' }}">
 
     {{# Desktop navigation #}}
-    <div class="container flex-col items-center justify-center hidden p-10 pb-4 mx-auto xl:flex">
-        <nav class="hidden w-full h-20 space-x-8 align-middle animated xl:flex" x-cloak>
-            {{ partial:navigation show_home_logo="true" active_class="text-primary-accent" class="" :style="banner ?= 'contrast'" }}
-        </nav>
-    </div>
+    {{ partial:navigation show_home_logo="true" active_class="!text-primary-accent" :style="banner ?= 'contrast'" }}
 
     {{# Mobile navigation #}}
     {{ nav_logo = style == 'contrast' ? '/assets/img/logo-alt.svg': '/assets/img/logo.svg' }}

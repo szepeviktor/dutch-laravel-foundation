@@ -1,38 +1,38 @@
 // Headroom.js
-import Headroom from 'headroom.js';
+import Headroom from "headroom.js";
 
-import hljs from 'highlight.js/lib/core';
-import bash from 'highlight.js/lib/languages/bash';
-import css from 'highlight.js/lib/languages/css';
-import graphql from 'highlight.js/lib/languages/graphql';
-import javascript from 'highlight.js/lib/languages/javascript';
-import json from 'highlight.js/lib/languages/json';
-import php from 'highlight.js/lib/languages/php';
-import shell from 'highlight.js/lib/languages/shell';
-import sql from 'highlight.js/lib/languages/sql';
-import xml from 'highlight.js/lib/languages/xml';
+import hljs from "highlight.js/lib/core";
+import bash from "highlight.js/lib/languages/bash";
+import css from "highlight.js/lib/languages/css";
+import graphql from "highlight.js/lib/languages/graphql";
+import javascript from "highlight.js/lib/languages/javascript";
+import json from "highlight.js/lib/languages/json";
+import php from "highlight.js/lib/languages/php";
+import shell from "highlight.js/lib/languages/shell";
+import sql from "highlight.js/lib/languages/sql";
+import xml from "highlight.js/lib/languages/xml";
 
-import 'highlight.js/styles/github.css';
+import "highlight.js/styles/github.css";
 
-hljs.registerLanguage('bash', bash);
-hljs.registerLanguage('css', css);
-hljs.registerLanguage('graphql', graphql);
-hljs.registerLanguage('javascript', javascript);
-hljs.registerLanguage('json', json);
-hljs.registerLanguage('php', php);
-hljs.registerLanguage('shell', shell);
-hljs.registerLanguage('sql', sql);
-hljs.registerLanguage('xml', xml);
+hljs.registerLanguage("bash", bash);
+hljs.registerLanguage("css", css);
+hljs.registerLanguage("graphql", graphql);
+hljs.registerLanguage("javascript", javascript);
+hljs.registerLanguage("json", json);
+hljs.registerLanguage("php", php);
+hljs.registerLanguage("shell", shell);
+hljs.registerLanguage("sql", sql);
+hljs.registerLanguage("xml", xml);
 
-window.addEventListener('load', (event) => {
-    document.querySelectorAll('pre code').forEach((el) => {
+window.addEventListener("load", (event) => {
+    document.querySelectorAll("pre code").forEach((el) => {
         hljs.highlightElement(el);
     });
 });
 
-var header = document.querySelector('header'),
-    banner = document.querySelector('.banner'),
-    nav = header.querySelector('nav.animated');
+var header = document.querySelector("header"),
+    banner = document.querySelector(".banner"),
+    nav = header.querySelector("nav.animated");
 
 var includeBannerHeight = false;
 var bannerHeight = combinedHeaderHeight(includeBannerHeight);
@@ -47,9 +47,9 @@ if (header != null && isIE === false) {
             down: 0,
         },
         classes: {
-            initial: 'animated',
-            pinned: 'slideDown',
-            unpinned: 'slideUp',
+            initial: "animated",
+            pinned: "slideDown",
+            unpinned: "slideUp",
         },
     });
 
@@ -57,94 +57,88 @@ if (header != null && isIE === false) {
 
     // When the banner has changing heights else you can remove this part
     window.addEventListener(
-        'load',
+        "load",
         function () {
-            headerHide.offset = { down: combinedHeaderHeight(includeBannerHeight), up: combinedHeaderHeight(includeBannerHeight) };
+            headerHide.offset = {
+                down: combinedHeaderHeight(includeBannerHeight),
+                up: combinedHeaderHeight(includeBannerHeight),
+            };
         },
-        false,
+        false
     );
 
-    window.addEventListener('scroll', (event) => {
-        if (window.scrollY > (bannerHeight / 2)) {
-            nav.classList.add('make-small');
-            nav.classList.remove('make-large');
+    window.addEventListener("scroll", (event) => {
+        if (window.scrollY > bannerHeight / 2) {
+            nav.classList.add("make-small");
+            nav.classList.remove("make-large");
         } else {
-            nav.classList.add('make-large');
-            nav.classList.remove('make-small');
+            nav.classList.add("make-large");
+            nav.classList.remove("make-small");
         }
     });
 }
 
 function combinedHeaderHeight(includeBanner = true) {
-    return header.offsetHeight + (includeBanner && banner ? banner.offsetHeight : 0);
+    return (
+        header.offsetHeight +
+        (includeBanner && banner ? banner.offsetHeight : 0)
+    );
 }
 
 // SwiperJS
-import './components/swiper';
+import "./components/swiper";
 
 // AlpineJS
-import Alpine from 'alpinejs';
+import Alpine from "alpinejs";
 window.Alpine = Alpine;
 Alpine.start();
-
-// Footer title position
-var footer = document.querySelector('footer'),
-    footerTitle = footer.querySelector('#footer-title');
-
-function moveFooterTitle() {
-    if (((document.documentElement.clientWidth - footer.offsetWidth) / 2) >= 64) {
-        footerTitle.classList.add('-translate-x-[7.25rem]');
-        return;
-    }
-    footerTitle.classList.remove('-translate-x-[7.25rem]');
-}
-moveFooterTitle();
-window.addEventListener('resize', () => { moveFooterTitle(); });
 
 // Footprint
 if (!(window.console && window.console.log && window.console.group)) {
     window.console = {
-        group: function () { },
-        log: function () { }
+        group: function () {},
+        log: function () {},
     };
 }
 
-window.console.group('DEVELOPER ALERT!');
-window.console.log('\nHallo daar! Wil jij ook zulke mooie dingen maken zoals deze website? Neem eens een kijkje bij ons op:\n\nwww.vormkracht10.nl\n\n');
+window.console.group("DEVELOPER ALERT!");
+window.console.log(
+    "\nHallo daar! Wil jij ook zulke mooie dingen maken zoals deze website? Neem eens een kijkje bij ons op:\n\nwww.vormkracht10.nl\n\n"
+);
 window.console.groupEnd();
 
 // AOS
-import AOS from 'aos';
+import AOS from "aos";
 
-let aosElement = document.querySelector('[data-aos]');
+let aosElement = document.querySelector("[data-aos]");
 
 if (aosElement) {
     AOS.init({
         once: true,
     });
 
-    window.addEventListener('load', AOS.refresh);
+    window.addEventListener("load", AOS.refresh);
 }
 
 // GSAP
 import { gsap } from "gsap";
 
-gsap.to('.top-floor-floating-element-bottom', {
+gsap.to(".top-floor-floating-element-bottom", {
     y: 20,
     duration: 5,
     stagger: {
         each: 0.6,
         repeat: -1,
         yoyo: true,
-    }
+    },
 });
 
-gsap.to('.top-floor-floating-element-top', {
+gsap.to(".top-floor-floating-element-top", {
     y: -20,
     duration: 5,
     stagger: {
         each: 0.6,
         repeat: -1,
         yoyo: true,
-    }
+    },
 });

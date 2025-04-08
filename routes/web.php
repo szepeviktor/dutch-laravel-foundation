@@ -8,6 +8,7 @@ Route::permanentRedirect('/leden/avocado-media', '/leden/clarity');
 Route::permanentRedirect('/about-us', '/over-ons');
 Route::permanentRedirect('/become-member', '/lid-worden');
 Route::permanentRedirect('/about-laravel', '/what-is-laravel');
+Route::permanentRedirect('/knowledge/{slug?}', '/kennis/{slug?}');
 
 // Member redirects
 Route::permanentRedirect('/our-members/1', '/leden/pxl-widgets');
