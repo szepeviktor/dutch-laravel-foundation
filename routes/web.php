@@ -24,4 +24,3 @@ Route::permanentRedirect('/calendar/{slug?}', '/agenda/{slug?}');
 
 // Cases redirects
 Route::permanentRedirect('/showcases/{slug?}', '/cases/{slug?}');
-
