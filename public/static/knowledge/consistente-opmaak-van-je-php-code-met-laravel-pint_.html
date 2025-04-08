@@ -28,8 +28,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     
-    <title>Lid worden - Dutch Laravel Foundation</title>
-    <meta property="og:title" content="Lid worden - Dutch Laravel Foundation">
+    <title>Consistente opmaak van je PHP code met Laravel Pint - Dutch Laravel Foundation</title>
+    <meta property="og:title" content="Consistente opmaak van je PHP code met Laravel Pint - Dutch Laravel Foundation">
     
     
     <meta name="description" content="De kennis- en brancheorganisatie voor Laravel developers">
@@ -39,7 +39,7 @@
     <meta name="keywords" content="Laravel, PHP, Larafest, Taylor Otwell, Dutch Laravel Foundation, DLF, kennisorganisatie">
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dutchlaravelfoundation.nl/lid-worden">
+    <meta property="og:url" content="https://dutchlaravelfoundation.nl/knowledge/consistente-opmaak-van-je-php-code-met-laravel-pint">
     
     
     <meta property="og:description" content="De kennis- en brancheorganisatie voor Laravel developers">
@@ -59,7 +59,7 @@
 </head>
 
 <body class="font-sans leading-normal bg-white text-primary-text">
-    <div class="frontend relative page-lid-worden">
+    <div class="frontend relative page-consistente-opmaak-van-je-php-code-met-laravel-pint">
         
 
 
@@ -152,8 +152,10 @@ function menu() {
     
         
         
+            
+        
         <a href="/knowledge"
-            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent ">Knowledge</a>
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit text-primary-accent ">Knowledge</a>
     
 
     
@@ -173,10 +175,8 @@ function menu() {
     
         
         
-            
-        
         <a href="/lid-worden"
-            class="block h-auto my-auto border-b border-transparent hover:text-inherit text-primary-accent ">Lid worden</a>
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent ">Lid worden</a>
     
 
         </nav>
@@ -257,7 +257,7 @@ function menu() {
     
     
         <a href="/knowledge"
-            class=" flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white  ">Knowledge</a>
+            class=" flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white  text-primary-accent">Knowledge</a>
     
 
     
@@ -275,7 +275,7 @@ function menu() {
     
     
         <a href="/lid-worden"
-            class=" flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white  text-primary-accent">Lid worden</a>
+            class=" flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white  ">Lid worden</a>
     
 
                 </div>
@@ -287,393 +287,126 @@ function menu() {
 
 
         <div id="content" class="container  pt-16 sm:pt-10 xl:pt-0 mt-10 sm:mt-20 lg:mt-20 xl:mt-52  px-6 lg:px-10 mb-auto mx-auto flex flex-col items-left justify-center">
-    <div class="container z-[-1] relative">
-    <div class="absolute right-[-55rem] md:right-[-45rem] lg:right-[-23rem] top-0">
-        <div>
-            <img src="/assets/img/backgrounds/floor-top-about-us.svg" class="w-[1120px] h-[900px]">
-        </div>
+    <article class="mb-half">
+    <img src="/img/asset/a25vd2xlZGdlL2xhcmF2ZWwtcGludC1mZWF0dXJlZC1pbWFnZS5qcGc=/laravel-pint-featured-image.jpg?fit=crop&w=1500&s=aa0ef5e5ace436debffaed16af79e703" class="object-cover w-full h-96 lg:h-[48rem] mb" style="object-position:50% 50%">
+    <div class="relative w-full lg:w-11/12 lg:mx-auto bg-white lg:-mt-64 min-h-[10rem] px-6 sm:px-0 lg:p-10 z-10">
+        <h1>Consistente opmaak van je PHP code met Laravel Pint</h1>
+        <p>Als je denkt dat Pint een overheerlijk Laravel biertje is, moeten we je helaas teleurstellen. Met Laravel Pint kan je eenvoudig de code in je PHP-bestanden op een bepaalde manier opmaken. Het gebruik van Pint is volledig te automatiseren waardoor je nooit meer over de opmaak van je code hoeft na te denken.<br />
+<br/></p>
+<h2>De voordelen</h2>
+<p>Een consistente opmaak van je bestanden is niet alleen prettig voor het oog, maar heeft ook voordelen. Het zorgt voor een betere leesbaarheid doordat structuren zoals IF statements en loops er altijd hetzelfde uitzien. Dit maakt het reviewen van code een stuk prettiger en het verbetert de onderhoudbaarheid van je project.<br />
+<br/></p>
+<h2>Onder de motorkap</h2>
+<p>Hoewel Pint standaard mee komt in nieuwe Laravel installaties, heb je er misschien nog niet eerder van gehoord. Waar je misschien al wel van heb gehoord is <a href="https://github.com/PHP-CS-Fixer/PHP-CS-Fixer">PHP CS Fixer</a>. Het is zo'n beetje de industriestandaard binnen PHP om je PHP code mee op te maken. Laravel Pint maakt achter de schermen gebruik van PHP CS Fixer, en bevat aanvullende functionaliteiten waardoor het eenvoudig te gebruiken is in je Laravel project.<br />
+<br/></p>
+<h2>Zo gebruik je het</h2>
+<p>Heb je recent een nieuwe Laravel applicatie aangemaakt, dan is Pint al inbegrepen in je composer.json. Voor de oudere projecten moet je de package handmatig installeren via de terminal.</p>
+<pre><code class="language-bash">composer require laravel/pint --dev
+</code></pre>
+<p>Vervolgens kan je de formatter uitvoeren vanuit de root van je project. Let op, als het de eerste keer is dat je pint gebruikt kan het voor veel code wijzigingen zorgen.</p>
+<pre><code class="language-bash">./vendor/bin/pint --test
+// Voert geen code wijzigingen door, toont enkel wat er gewijzigd zal worden.
+
+./vendor/bin/pint
+// Voert wel code wijzigingen door
+</code></pre>
+<p><img src="https://dutchlaravelfoundation.nl/assets/uploads/assets/pint-output.jpg" alt="pint output" /><br />
+<br/></p>
+<h2>Configuratie</h2>
+<p>Laravel Pint werkt met presets. Een preset is een samengestelde lijst met regels die bepalen hoe je code opgemaakt zal worden. Standaard wordt de Laravel preset gebruikt, de exacte regels kan je <a href="https://github.com/laravel/pint/blob/main/resources/presets/laravel.php">hier</a> bekijken. Naast de Laravel preset heb je ook standaard de beschikking over de PER, PSR12 en Symfony preset.</p>
+<p>Een dergelijke preset kan je instellen door een pint.json bestand aan te maken in de root van je project:</p>
+<pre><code class="language-json">{
+	&quot;preset&quot;: &quot;psr12&quot;
+}
+</code></pre>
+<p>Presets zijn handig omdat ze een hele reeks aan regels bevatten waar je zelf niet over na hoeft te denken. Mocht je merken dat je een bepaalde regel toch niet fijn vindt of mis je een regel, dan kan je die via een rules blok overschrijven of toevoegen.</p>
+<pre><code class="language-json">{
+	&quot;preset&quot;: &quot;psr12&quot;,
+	&quot;rules&quot;: {
+		&quot;braces&quot;: false
+	}
+}
+</code></pre>
+<p>Op deze manier kan je Pint helemaal naar wens je code laten opmaken.<br />
+<br/></p>
+<h2>Pint automatisch toepassen</h2>
+<p>Je kan Pint eens in de zoveel tijd handmatig aanroepen om je code op te schonen, maar je kan het ook automatiseren. We laten je zien op welke manieren je dit kan doen.<br />
+<br/></p>
+<h3>GitHub actions</h3>
+<p>Met GitHub actions kan je veel zaken automatiseren, waaronder ook het toepassen van code formatters zoals Pint. Zo kan je een action instellen waarbij na iedere commit die je pushed automatisch Pint zal worden uitgevoerd.</p>
+<pre><code class="language-yaml">name: Fix Code Style
+
+on: [push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        php: [8.4]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: json, dom, curl, libxml, mbstring
+          coverage: none
+
+      - name: Install Pint
+        run: composer global require laravel/pint
+
+      - name: Run Pint
+        run: pint
+
+      - name: Commit linted files
+        uses: stefanzweifel/git-auto-commit-action@v5
+</code></pre>
+<p>De code wijzingen worden via een aparte commit aan de branch toegevoegd. Hierdoor hoef je niets op je computer in te stellen. Dit geldt ook voor andere deelnemers in je project, wel zo handig. Het heeft wel een klein nadeel. Als je nogmaals een commit pusht nadat de GitHub action is afgerond kan het zijn dat je eerst een pull moet doen voordat je kan pushen.<br />
+<img src="https://dutchlaravelfoundation.nl/assets/uploads/assets/pull-notification-2.jpg" alt="pull notification" /></p>
+<p>Wanneer je de regels hebt aangepast die door Pint zijn aangepast kan dit ook leiden tot een merge conflict.<br />
+<img src="https://dutchlaravelfoundation.nl/assets/uploads/assets/pint-merge-conflict-notification.jpg" alt="pull notification" /><br />
+Niet echt een ideale workflow, maar het is te verhelpen.<br />
+<br/></p>
+<h3>Pre-commit hook</h3>
+<p>Door gebruik te maken van een pre-commit hook kun je acties autmatisch uit laten voeren waneer je een commit aanmaakt. Hiermee kan je bijvoorbeeld Pint uitvoeren zonder dat je er over hoeft na te denken. Daardoor push je altijd gestylde PHP code waardoor je de eerder beschreven problemen met GitHub actions kan voorkomen.</p>
+<p>Er zijn er verschillende tools waarmee je kan inhaken op <a href="https://git-scm.com/docs/githooks#_hooks">git hooks</a>. Zelf vind ik <a href="https://github.com/ProjektGopher/whisky">Whisky</a> erg fijn en eenvoudig in gebruikt. Je kan het toevoegen aan je Laravel project via:</p>
+<pre><code class="language-bash">composer require --dev projektgopher/whisky
+</code></pre>
+<p>Vergeet niet het install commando te draaien</p>
+<pre><code class="language-bash">./vendor/bin/whisky install
+</code></pre>
+<p>Nu is alles ingesteld om Whisky te configureren. Maak een whisky.json bestand aan de root van je project met de volgende inhoud.</p>
+<pre><code class="language-json">{
+    &quot;disabled&quot;: [],
+    &quot;hooks&quot;: {
+        &quot;pre-commit&quot;: [&quot;./vendor/bin/pint --dirty&quot;]
+    }
+}
+</code></pre>
+<p>Dit zorgt ervoor dat bij iedere commit Pint wordt toegepast op alle aangepaste bestanden. Wanneer je een commit aanmaakt zie je als het goed is dat ook Pint is uitgevoerd:<br />
+<img src="https://dutchlaravelfoundation.nl/assets/uploads/assets/pre-commit.jpg" alt="pre commit hook" /><br />
+<br/></p>
+<h3>Pint uitvoeren bij het opslaan van je bestanden</h3>
+<p>Een derde manier waarmee je Pint kan uitvoeren is door je IDE te configureren om Pint te gebruiken als formatter voor PHP bestanden. Veel IDE's ondersteunen de optie om een formatter uit te voeren bij het opslaan van bestanden. Aangezien er veel IDE's zijn, ga ik niet in detail over hoe je het bij jouw IDE instelt. Als je met VSCODE (of een afgeleide daarvan) of PHP Storm werkt kan je <a target="_blank" href="https://devinthewild.com/article/laravel-pint-formatting-vscode-phpstorm" rel="noopener noreferrer">dit artikel</a> eens bekijken.</p>
+<p>Je IDE Pint laten uitvoeren bij het opslaan van PHP bestanden is erg fijn. Bij het opslaan staat alles direct goed, wat het programmeren een stuk aangenamer maakt.</p>
+<p>Nu je precies weet wat Pint is en wat het doet zie je hopelijk de voordelen in om het actief te gebruiken in je project. Pint automatiseren vraagt even de nodige aandacht maar eenmaal ingesteld kan je er veel profijt van hebben.</p>
+<h2>Over de auteur</h2>
+<p>Dit artikel werd geschreven door <a target="_blank" href="https://www.linkedin.com/in/nckrtl/" rel="noopener noreferrer">Nick Retel</a>, freelance developer bij o.a. <a target="_blank" href="https://https://ohdear.app/" rel="noopener noreferrer">Oh Dear</a> en bestuurslid bij de Dutch Laravel Foundation.</p>
+
     </div>
-</div>
-
-<div class="flex flex-col justify-between w-full lg:flex-row">
-    <div class="w-full lg:w-2/3 mb">
-        <form method="POST" action="https://dutchlaravelfoundation.nl/!/forms/become_member"><input type="hidden" name="_token" value="STATAMIC_CSRF_TOKEN" autocomplete="off"><input type="hidden" name="_redirect" value="/lid-worden" />
-            
-
-                
-                    
-                        
-
-
-
+</article>
+<div class="flex w-full px-6 mx-auto mb lg:w-11/12 sm:px-0 lg:px-10">
     
-
-
-
-
-    
-
-
-
-
-<div class="w-full mr-auto set set-3-4-column sm:px-0 md:w-3/4">
-    <h1>Lid worden van de Dutch Laravel Foundation</h1>
-</div>
-<div class="w-full set set-3-4-column sm:px-0 md:w-3/4 mb">
-    
-        
-
-
-
-    
-
-
-
-
-    
-
-
-
-
-
-    <div class="set"><p>Zowel bureaus, ZZP’ers als ontwikkelteams die met Laravel werken kunnen lid worden van de Dutch Laravel Foundation. Naast de toegang tot een groot netwerk van Laravel specialisten krijg je exclusief toegang tot Laravel events en een &quot;keurmerk&quot; voor je organisatie. Bureaus en ZZP’ers krijgen daarnaast toegang tot leads van potentiële opdrachtgevers.</p></div>
-
-
-
-    
-</div>
-
-
-                    
-                        
-
-
-
-    
-
-
-
-
-
-
-
-<div class="w-full px-0 set set-double-column lg:w-1/2 lg:mr-auto">
-    <h2>Voordelen voor leden</h2>
-</div>
-<div class="flex flex-col justify-start px-0 set set-double-column lg:flex-row mb-half">
-    <div class="w-full md:w-3/4 lg:w-1/2 lg:pr-10">
-        
-            
-
-
-
-    
-
-
-
-
-    
-
-
-
-
-
-    <div class="set"><p>Als lid kun je rekenen op de volgende voordelen:</p><ul><li><p>Kennisuitwisseling voor developers en managers tijdens leuke events.</p></li><li><p>Een &quot;keurmerk&quot; voor je organisatie. Je lidmaatschap laat aan potentiële opdrachtgevers en sollicitanten zien dat je onderdeel bent van de Laravel community en toegang hebt tot alle voordelen. </p></li><li><p>Promotie van het framework onder potentiële opdrachtgevers.</p></li><li><p>Leads voor nieuwe projecten.</p></li><li><p>Korting op deelname aan Laracon (gemiddeld rond de <strong>10%)</strong>.</p></li><li><p>Korting op het Laravel Certified Program.</p></li><li><p>Toegang tot werkgroepen met veel kennis met betrekking tot best practices binnen Laravel, Laravel in het onderwijs, diversiteit en bijvoorbeeld het gebruik van Laravel binnen de overheid.</p></li><li><p>Toegang tot leuke DLF events:</p><ul><li><p>CxO diner, een interactieve avond met andere agency leaders. Onder het genot van heerlijk eten en drinken bespreken we alles m.b.t. het runnen van een eigen onderneming.</p></li><li><p>LaraFest, een zomers evenement met techtalks, BBQ, drankjes en de uitreiking van de LaraAward voor het meest innovatieve project.</p></li><li><p>Meetups</p></li><li><p>Jaarlijkse Laravel hackathon</p></li></ul></li><li><p>Kortingen op tooling:</p><ul><li><p>20% korting op nieuwe PhpStorm-licenties</p></li><li><p>50% korting op nieuwe Laravel Idea-licenties voor bestaande PhpStorm-gebruikers</p></li></ul></li><li><p>Aanvullende kortingen momenteel in ontwikkeling. Zo hebben we lopende gesprekken met onder andere <strong>Sentry</strong>, <strong>Laracasts</strong>, <strong>Laravel Shift</strong> en andere partners.</p></li></ul><p><br>Als je Laravel Company Certified bent, dan kan je gebruik maken van aanvullende voordelen:</p><ul><li><p>€ 250,- korting op de lidmaatschapsfee van de DLF (eenmalig)</p></li><li><p>25% korting op Developer Certification examen (Van € 249,- voor <strong>€ 186,75</strong> per examen)</p></li><li><p>25% korting op een jaar Company Certification (Van € 799,- voor <strong>€ 599,-</strong>, inclusief één Developer Certification examen)</p></li><li><p>Als gecertificeerd bedrijf betaal je daarna slechts <strong>€ 99,-</strong> per  Developer Certification examen in plaats van € 249,-</p></li></ul></div>
-
-
-
-        
-    </div>
-    <div class="w-full pt-4 md:w-3/4 lg:w-1/2 lg:pt-0 lg:pl-10">
-        
-            
-
-
-
-    
-
-
-
-
-    
-
-
-
-
-
-    <div class="set"><p>De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert kennisuitwisseling tussen Laravel developers in Nederland. Opdrachtgevers van webapplicaties kunnen via de stichting geschikte Laravel developers vinden.</p></div>
-
-
-
-        
-    </div>
-</div>
-
-
-                    
-                        
-
-
-
-    
-
-
-
-
-
-
-
-
-    <div class="set"><h2>Lidmaatschap</h2></div>
-
-
-
-                    
-                        
-
-
-
-    
-
-
-
-
-
-
-    
-    <div class="w-full flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mb">
-
-
-<div class="block-meta flex flex-col w-full set w-full md:w-1/3">
-    
-        
-            <h4 class="block w-full mb-[.3rem]">ZZP</h4>
-        
-    
-    
-        
-            <span class="meta">€ 450,- per jaar</span>
-        
-    
-    
-</div>
-
-
-                    
-                        
-
-
-
-    
-
-
-
-
-
-
-
-<div class="block-meta flex flex-col w-full set w-full md:w-1/3">
-    
-        
-            <h4 class="block w-full mb-[.3rem]">Bureau</h4>
-        
-    
-    
-        
-            <span class="meta">€ 1.250,- per jaar</span>
-        
-    
-    
-</div>
-
-
-                    
-                        
-
-
-
-    
-
-
-
-
-
-
-
-<div class="block-meta flex flex-col w-full set w-full md:w-1/3">
-    
-        
-            <h4 class="block w-full mb-[.3rem]">Ontwikkelteam</h4>
-        
-    
-    
-        
-            <span class="meta">€ 1.250,- per jaar</span>
-        
-    
-    
-</div>
-
-
-                    
-                        
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-    
-    </div>
-
-                    
-                    <div class="h-10 border-b border-tertiary-dark opacity-20 mb-half"></div>
-                
-
-                <input type="text" class="hidden" name="address">
-
-                <div class="flex flex-col pb-10 space-y-6 sm:pb-0 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 sm:px-0">
-                    
-                        
-                            <div class="">
-                                <label for="name"><span class="meta">Naam</span></label>
-                                
-                                    
-                                
-                                
-                                <input id='name'
-    type="text"
-    name="name"
-    value=""
-    
-    
-    
-    
-    required
->
-                                
-                                
-                            </div>
-                        
-                    
-                        
-                            <div class="">
-                                <label for="email"><span class="meta">E-mailadres</span></label>
-                                
-                                    
-                                
-                                
-                                <input id='email'
-    type="text"
-    name="email"
-    value=""
-    
-    
-    
-    
-    required
->
-                                
-                                
-                            </div>
-                        
-                    
-                        
-                            <div class="">
-                                <label for="company_name"><span class="meta">Bedrijfsnaam</span></label>
-                                
-                                    
-                                
-                                
-                                <input id='company_name'
-    type="text"
-    name="company_name"
-    value=""
-    
-    
-    
-    
-    
->
-                                
-                                
-                            </div>
-                        
-                    
-                        
-                            <div class="">
-                                <label for="phone"><span class="meta">Telefoonnummer</span></label>
-                                
-                                    
-                                
-                                
-                                <input id='phone'
-    type="text"
-    name="phone"
-    value=""
-    
-    
-    
-    
-    
->
-                                
-                                
-                            </div>
-                        
-                    
-                        
-                            <div class="sm:col-span-2">
-                                <label for="remarks"><span class="meta">Opmerkingen</span></label>
-                                
-                                    
-                                
-                                
-                                <textarea id='remarks'
-    name="remarks"
-    rows="5"
-    
-    
-    
-    required
-></textarea>
-                                
-                                
-                            </div>
-                        
-                    
-                        
-                            <div class="flex flex-col justify-between col-span-2 lg:flex-row">
-                                <div class="flex flex-row w-full lg:w-4/6 text-tertiary-light mb"><input type="hidden" name="agree[]"><label><input
-            type="checkbox"
-            name="agree[]"
-            value=""
-            
-            
-            required
-        ></label><span class="ml-2">Bij het gebruiken van dit formulier ga je akkoord met de bepalingen uit ons <a href='/privacy-statement'>privacy statement</a>.</span></div>
-                                
-<button type="submit"  class="relative flex h-12 items-center justify-center group w-full ml-auto sm:w-auto" >
-    <div class="text-xs uppercase whitespace-nowrap px-8 font-bold flex items-center justify-center w-full h-full transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 z-20 bg-primary-accent text-white w-full">Versturen</div>
+<a   class="relative flex h-12 items-center justify-center group " href="/knowledge">
+    <div class="text-xs uppercase whitespace-nowrap px-8 font-bold flex items-center justify-center w-full h-full transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 z-20 bg-primary-contrast !text-tertiary-dark border border-primary-accent ">Naar alle kennis</div>
     <div class="absolute bottom-0 right-0 w-full h-full border z-10 border-primary-accent "></div>
-</button>
-                            </div>
-                        
-                    
-                </div>
-            
-        </form>
-    </div>
+</a>
 </div>
-
 </div>
         <footer
     class="container relative mx-auto sm:px-6 lg:px-10  -mt-16 ">
@@ -683,24 +416,24 @@ function menu() {
     
     
         
-            <a href="/leden" title="Op zoek naar Laravel ondersteuning voor jouw bedrijf?">
+            <a href="/lid-worden" title="Maak deel uit van deze community">
         
-            <h3 class="block w-full">Op zoek naar Laravel ondersteuning voor jouw bedrijf?</h3>
+            <h3 class="block w-full">Maak deel uit van deze community</h3>
         
             </a>
         
     
     
-        <a href="/leden" title="Op zoek naar Laravel ondersteuning voor jouw bedrijf?" class="!text-primary-text">
+        <a href="/lid-worden" title="Maak deel uit van deze community" class="!text-primary-text">
     
         <div class="flex flex-col items-center justify-between base:flex-row">
-                    <div class="w-full lg:w-2/3 3xl:w-7/12 4xl:w-1/2"><p>Zoek binnen onze organisatie naar de juiste developers.</p>
+                    <div class="w-full lg:w-2/3 3xl:w-7/12 4xl:w-1/2"><p>Naast toegang tot een groot netwerk van Laravel specialisten krijg je exclusief toegang tot Laravel events en een keurmerk voor je organisatie. Ook promoten wij onze leden onder toekomstige klanten!</p>
 </div>
                     <div class="w-full pt-6 pl-0 ml-auto base:pl-10 base:pt-0 sm:w-auto">
                         
-<a   class="relative flex h-12 items-center justify-center group " href="/leden">
-    <div class="text-xs uppercase whitespace-nowrap px-8 font-bold flex items-center justify-center w-full h-full transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 z-20 bg-tertiary-dark text-white w-full">Zoek lid</div>
-    <div class="absolute bottom-0 right-0 w-full h-full border z-10 border-tertiary-dark "></div>
+<a   class="relative flex h-12 items-center justify-center group w-full" href="/lid-worden">
+    <div class="text-xs uppercase whitespace-nowrap px-8 font-bold flex items-center justify-center w-full h-full transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 z-20 bg-primary-accent text-white w-full">Word lid</div>
+    <div class="absolute bottom-0 right-0 w-full h-full border z-10 border-primary-accent "></div>
 </a>
                     </div>
                 </div>
@@ -763,8 +496,10 @@ function menu() {
     
         
         
+            
+        
         <a href="/knowledge"
-            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent font-normal">Knowledge</a>
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit !border-tertiary-light font-normal">Knowledge</a>
     
 
     
@@ -784,10 +519,8 @@ function menu() {
     
         
         
-            
-        
         <a href="/lid-worden"
-            class="block h-auto my-auto border-b border-transparent hover:text-inherit !border-tertiary-light font-normal">Lid worden</a>
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent font-normal">Lid worden</a>
     
 
         </nav>
