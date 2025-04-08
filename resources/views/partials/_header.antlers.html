@@ -38,14 +38,16 @@ function menu() {
 }
 </script>
 
-<header class="fixed top-0 left-0 w-screen z-999 {{ banner ? 'xl:bg-primary-accent': 'xl:bg-white' }}">
+<header class="fixed top-0 left-0 w-screen z-999 {{ banner ? 'lg:bg-primary-accent': 'xl:bg-white' }}">
 
     {{# Desktop navigation #}}
-    {{ partial:navigation show_home_logo="true" active_class="!text-primary-accent" :style="banner ?= 'contrast'" }}
+    <div class="container mx-auto p-10 justify-between space-x-12 hidden lg:flex">
+        {{ partial:navigation show_home_logo="true" active_class="!text-primary-accent" :style="banner ?= 'contrast'" }}
+    </div>
 
     {{# Mobile navigation #}}
     {{ nav_logo = style == 'contrast' ? '/assets/img/logo-alt.svg': '/assets/img/logo.svg' }}
-    <div class="relative xl:hidden js-alpine-init {{ banner ? 'bg-primary-accent': 'bg-white' }} pb-6" x-data="menu()" x-init="init()" x-cloak role="navigation">
+    <div class="relative lg:hidden js-alpine-init {{ banner ? 'bg-primary-accent': 'bg-white' }} pb-6" x-data="menu()" x-init="init()" x-cloak role="navigation">
         <div class="flex flex-row items-start justify-between w-full px-6 pt-6 pb-0 mx-auto xl:pt-10">
             <a href="/" class="flex justify-start w-full"><img class="max-w-full max-h-[3rem] xl:max-h-full" src="{{ banner ? '/assets/img/logo-alt.svg': '/assets/img/logo.svg' }}" alt="Home"></a>
             {{# Toggle button #}}

@@ -10,12 +10,14 @@ tree:
       -
         id: cc80b938-34b4-4526-8ff1-e1f0ee043c9d
         entry: fedf1b6c-91e0-4ec7-920d-5d05d3007f22
+        title: Cases
       -
         id: dd5bf3ce-7847-4aab-98e4-0cdca75518c7
         entry: 83389b84-3d9d-43ad-956c-223c261062cc
   -
     id: 8191f4bc-14a4-4911-a3d5-c9d282bb0946
     entry: 7840f9f9-3fba-4608-b877-250f18e634b2
+    title: Nieuws
   -
     id: dd6b974d-bb49-4945-b984-75f0f8b0a320
     entry: 645047c0-702b-40fd-9f72-621e0803318b
@@ -27,6 +29,7 @@ tree:
       -
         id: 7b4e4030-5766-4cb0-bd98-2ab81506ec70
         entry: c2893d75-5eb2-4840-b20d-d222a9155b4c
+        title: 'De organisatie'
       -
         id: 11cdc56a-d8b5-45ce-9126-e0b8b1fdaa43
         entry: 35fe78ba-35d3-44a4-b514-55167c5e514c

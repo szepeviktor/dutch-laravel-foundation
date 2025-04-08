@@ -3,41 +3,40 @@
 {{ nav_url_class = style == 'contrast' ? 'text-white! hover:border-primary-contrast': 'hover:border-primary-accent' }}
 {{ nav_logo = style == 'contrast' ? '/assets/img/logo-alt.svg': '/assets/img/logo.svg' }}
 {{ button_class = style == 'contrast' ? 'text-white group-hover:bg-white group-hover:text-primary-accent' : '!text-primary-accent !border-primary-accent hover:!border-primary-accent group-hover:bg-primary-accent hover:!text-white' }}
+{{ button_background_class = style == 'contrast' ? 'border-white' : 'border-primary-accent' }}
 {{ chevron_class = style == 'contrast' ? 'text-white' : 'text-black/50' }}
 
-<div class="container mx-auto p-10 justify-between space-x-12 hidden xl:flex">
-    <a href="/">
-        <img class="!w-44 {{nav_url_class}}" src="{{ nav_logo }}" alt="{{ title }}">
-    </a>
+<a href="/">
+    <img class="!w-44 {{nav_url_class}}" src="{{ nav_logo }}" alt="{{ title }}">
+</a>
 
-    <div class="flex items-center gap-12">
-        {{ nav:main }}
-            {{ if depth == 1 }}
-                <div class="group relative py-4 flex items-center gap-1">
-                    <a href="{{ url }}"
-                        class="font-bold border-b border-transparent hover:text-inherit {{ if is_current or is_parent }} {{active_class}} {{ /if }} {{ nav_url_class }} {{ class }}">
-                        {{ title}}
-                    </a>
-                    {{ if children }}
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 {{ chevron_class }}">
-                            <path fill-rule="evenodd"
-                                d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
-                                clip-rule="evenodd" />
-                        </svg>
+<div class="flex items-center gap-12">
+    {{ nav:main }}
+        {{ if depth == 1 }}
+            <div class="group relative py-4 flex items-center gap-1">
+                <a href="{{ url }}"
+                    class="font-bold border-b border-transparent hover:text-inherit {{ if is_current or is_parent }} {{active_class}} {{ /if }} {{ nav_url_class }} {{ class }}">
+                    {{ title}}
+                </a>
+                {{ if children }}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 {{ chevron_class }}">
+                        <path fill-rule="evenodd"
+                            d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                            clip-rule="evenodd" />
+                    </svg>
 
-                        <ul class="absolute bg-gray-50 border border-gray-100 p-1 space-y-1 shadow-xl/5 flex-col rounded-md hidden group-hover:flex top-12 min-w-40 left-0">
-                            {{*recursive children* }}
-                        </ul>
-                    {{ /if }}
-                </div>
-            {{ elseif depth == 2 }}
-                <li >
-                    <a class="block py-1 px-3 rounded text-black font-bold text-sm h-auto my-auto hover:bg-primary-accent hover:!text-white {{ if is_current or is_parent }} {{active_class}} {{ /if }}  {{ class }}"
-                        href="{{ url }}">{{ title }}</a>
-                </li>
-            {{ /if }}
-        {{ /nav:main }}
+                    <ul class="absolute bg-gray-50 border border-gray-100 p-1 space-y-1 shadow-xl/5 flex-col rounded-md hidden group-hover:flex top-12 min-w-40 left-0">
+                        {{*recursive children* }}
+                    </ul>
+                {{ /if }}
+            </div>
+        {{ elseif depth == 2 }}
+            <li >
+                <a class="block py-1 px-3 rounded text-black font-bold text-sm h-auto my-auto hover:bg-primary-accent hover:!text-white {{ if is_current or is_parent }} {{active_class}} {{ /if }}  {{ class }}"
+                    href="{{ url }}">{{ title }}</a>
+            </li>
+        {{ /if }}
+    {{ /nav:main }}
 
-        {{ partial:buttons/primary-border-alt class="{{button_class}}" link="/lid-worden" type="button" }}Lid worden{{ /partial:buttons/primary-border-alt }}
-    </div>
+    {{ partial:buttons/primary-border-alt class="{{ button_class }}" background_class="{{ button_background_class }}" link="/lid-worden" type="button" }}Lid worden{{ /partial:buttons/primary-border-alt }}
 </div>
