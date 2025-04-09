@@ -15,11 +15,9 @@
         </div>
     {{ /call_to_action }}
     <div class="px-6 lg:px-10 pb-10 bg-secondary-light {{ if call_to_action }} pt-24 lg:pt-32 {{ else }} pt-6 lg:pt-10 {{ /if }}">
-        <h2 id="footer-title" class="mb-2 text-[25px] lg:text-[48px] font-bold text-primary-accent lg:mb-10 xl:mb-2">{{ site.name }}</h2>
-        <nav class="hidden w-full h-16 mb-10 space-x-10 align-middle xl:flex">
-            {{ partial:navigation class="font-normal" active_class="border-tertiary-light!" style="default" }}
-        </nav>
-        <div class="flex flex-col">
+        <h2 id="footer-title" class=" text-[25px] lg:text-[48px] font-bold text-primary-accent ">{{ site.name }}</h2>
+
+        <div class="flex flex-col mt-6">
             <h4 class="hidden lg:block">Leden</h4>
             <div class="flex-col justify-between hidden mb-5 sm:flex md:flex-row">
                 <div class="hidden w-full lg:block md:w-7/12">
