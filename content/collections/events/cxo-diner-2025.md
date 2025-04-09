@@ -7,11 +7,11 @@ featured_image: directors-dinner.jpeg
 type: Meetup
 location: N.T.B.
 address: N.T.B.
-date_start: '2025-11-20'
+date_start: '2025-11-27'
 time_start: '18:00'
 time_end: '22:00'
-updated_by: 28c0a799-7234-4581-b869-6eda5a36a8e2
-updated_at: 1733153402
+updated_by: 56dfbdc8-dfe6-463c-8129-227705aace57
+updated_at: 1743749851
 content:
   -
     type: paragraph
